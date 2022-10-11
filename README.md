@@ -1,8 +1,7 @@
-﻿# 273372_1-65_Midterm
+﻿# Server Side Programming Final Exam
 
 25 คะแนน (25%)
-1. (5 คะแนน) ให้พัฒนาโปแกรม CRUD โดยต่อยอดจาก GitHub repo ที่ผมขึ้นต้นไว้ให้ โดย ให้ทุกคน Fork โปรเจคของผม ที่นี่
-https://github.com/nattaponkum/273372_1-65_Midterm
+1. (5 คะแนน) Fork โปรเจคนี้ https://github.com/nattaponkum/273372_1-65_Midterm
 ไปไว้ใน repo ของตนเอง 
 
 2. (15 คะแนน) พัฒนาฝัง Back End ให้มี API ที่นิสิตสร้างใหม่ตามโจทย์ที่แต่ละคนจะได้รับเมื่อเริ่มการสอบ (ในตารางด้านล่าง)
