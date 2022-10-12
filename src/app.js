@@ -1,24 +1,23 @@
-let express = require('express')
-let bodyParser = require('body-parser')
-
+let express = require('express');
+const { sequelize } = require('./models');
 let cors = require('cors')
-const {sequelize} = require('./models')
+const config = require('./config/config');
 
-const config = require('./config/config')
+const app = express();
 
-const app = express()
-
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extened: true }))
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(cors())
+app.use('/assets', express.static('public'))
+
+require('./userPassport')
 
 require('./route.js')(app)
 
 
-let port = process.env.PORT || config.port
-
+let port = process.env.PORT || config.port;
 sequelize.sync({ force: false }).then(() => {
     app.listen(port, function () {
-        console.log('server running on ' + port)
+        console.log('server running on ' + port);
     })
 })
